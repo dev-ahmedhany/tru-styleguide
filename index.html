@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="development">
+  <head>
+    <title>Styleguide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <meta name="theme-color" content="white">
+    <link rel="shortcut icon" href="/__assets/bf5643aa888536bbb26d.ico">
+    <style>
+      body{
+        -moz-osx-font-smoothing: grayscale;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        min-height: 100%;
+        font: 500 14px/1.4 sans-serif;
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        color: #2c3e50;
+        background-color: white;
+      }
+
+      .preloading{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .preloading-spinner{
+        height: 100px;
+        width: 100px;
+        background-image: url(/__assets/5a8125c7cdbb56ccbee3.svg);
+        background-position: center;
+        background-size: cover;
+        -webkit-animation: preloading-spinner-spin 2s infinite linear;
+        animation: preloading-spinner-spin 2s infinite linear;
+      }
+      @-webkit-keyframes preloading-spinner-spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes preloading-spinner-spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  <script defer="defer" src="/__assets/runtime.182e1c679e8d42e29abe.js"></script><script defer="defer" src="/__assets/vendors.8ce705d6f3bfe8803951.js"></script><script defer="defer" src="/__assets/index.dff2f0824bf1da92aacf.js"></script><script defer="defer" src="/__assets/debug.f01f37fe08c1733fbee0.js"></script></head>
+  <body>
+    <main>
+       <div class="preloading">
+        <div class="preloading-spinner">
+      </div>
+    </main>
+    <noscript>
+      <style>
+        .noscript-error{
+          display: flex;
+          flex-direction: row;
+        }
+        .fakeLayout-sidebar{
+          width: 180px;
+          min-height: 100vh;
+          background-color: #333;
+        }
+        .fakeLayout-content{
+          flex: 1 1 calc(100vw - 180px);
+          min-height: 100vh;
+          background-color: white;
+          text-align: center;
+          font-size: 200%;
+        }
+        .you-must{
+          font-weight: 700;
+          color: #d00000;
+        }
+        .can-do{
+          font-weight: 500;
+        }
+      </style>
+      <div class="noscript-error">
+        <div class="fakeLayout-sidebar"></div>
+        <div class="fakeLayout-content">
+          <p class="you-must">You must enabled javascript in order to use Styleguide</p>
+          <p class="can-do">You can do this in <a href="http://enable-javascript.com/">your browser settings</a>.</p>
+        </div>
+      </div>
+    </noscript>
+  </body>
+</html>
